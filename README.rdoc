@@ -1,0 +1,29 @@
+= Markovian Music
+
+Markovian Music is a research project aimed at answering the question "Can computers create beautiful music?" This project applies the principles of Markov Chains to note sequences in music in order to create new music based on existing music.
+
+== Dependencies
+
+Markovian Music requires the Ruby gem midilib and was last tested with midilib 2.0.2 and Ruby 1.9.3.
+
+The GitHub project page and Website of midilib is
+http://github.com/jimm/midilib
+
+=== Midilib Installation
+
+To install midilib as a gem, type
+
+  % gem install midilib
+
+== How To Use
+
+Provided Ruby and midilib have both been installed, you need simply run the program from the commmand line by typing
+
+  % ruby note_19_back_to_no_left_begin_time_based.rb
+Doing so will output a midi file with timestamp in the file name based off the three Bach pieces in the project.
+
+== Recent Changes
+
+=== Changes for 1.0.0
+
+Updated project to work with Ruby 1.9.3 and midilib 2.0.2
