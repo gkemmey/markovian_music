@@ -23,10 +23,12 @@ class CreateInitialDb < ActiveRecord::Migration
 
     # time_slice of a song. slice_type defines a note type:
     # 0 = quater, other's may follow
+    # start_time and end_time are time in miliseconds since start of song
     create_table :time_slices do |t|
       t.integer         :slice_type,        null: false
       t.integer         :song_id,           null: false
-      t.integer         :time_from_start,   null: false
+      t.integer         :start_time,        null: false
+      t.integer         :end_time,          null: false
     end
     add_index :time_slices, [:slice_type, :time_from_start]
 
